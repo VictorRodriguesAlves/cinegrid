@@ -1,0 +1,8 @@
+{
+  "page": 1,
+  "total_pages": 1,
+  "results": [
+    {"id": 100, "title": "A Film", "original_title": "Um Filme", "release_date": "2020-09-01", "poster_path": "/abc123.jpg"},
+    {"id": 101, "title": "A Film", "original_title": "Another Film", "release_date": "2021-01-01", "poster_path": "/def456.jpg"}
+  ]
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:l="https://letterboxd.com" xmlns:t="https://themoviedb.org">
+  <channel><title>Synthetic edge cases, never used by the application</title>
+    <item><guid>valid</guid><link>https://letterboxd.com/test/film/cafe/2/</link><l:filmTitle><![CDATA[Café & Cinema]]></l:filmTitle><l:filmYear>2020</l:filmYear><l:watchedDate>2026-09-08</l:watchedDate><l:memberRating>0.5</l:memberRating><pubDate>Fri, 11 Sep 2026 10:00:00 GMT</pubDate><t:movieId>12</t:movieId></item>
+    <item><guid>publication-only</guid><l:filmTitle>Only published</l:filmTitle><pubDate>Fri, 11 Sep 2026 10:00:00 GMT</pubDate></item>
+    <item><guid>list</guid><link>https://letterboxd.com/test/list/favorites/</link><l:filmTitle>A list</l:filmTitle><l:watchedDate>2026-09-08</l:watchedDate></item>
+    <item><guid>invalid-date</guid><l:filmTitle>Bad date</l:filmTitle><l:watchedDate>2026-02-30</l:watchedDate></item>
+    <item><guid>tv</guid><l:filmTitle>Series</l:filmTitle><l:watchedDate>2026-09-08</l:watchedDate><t:tvId>10</t:tvId></item>
+    <item><guid>unsafe-link</guid><link>https://letterboxd.com.attacker.test/test/film/bad/</link><l:filmTitle>Safe title &amp; other</l:filmTitle><l:watchedDate>2026-09-08</l:watchedDate></item>
+  </channel>
+</rss>

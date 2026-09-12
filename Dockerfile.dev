@@ -1,0 +1,14 @@
+FROM node:24.21.0-bookworm-slim
+
+# IDs não são segredos; permitem alinhar as permissões ao usuário Linux/WSL.
+ARG DEV_UID=1000
+ARG DEV_GID=1000
+RUN groupmod -o -g "$DEV_GID" node \
+    && usermod -o -u "$DEV_UID" -g "$DEV_GID" node \
+    && mkdir -p /app/node_modules /app/.next \
+    && chown -R node:node /app /home/node
+
+WORKDIR /app
+USER node
+EXPOSE 3000
+CMD ["sh", "-c", "npm ci && npm run dev"]
