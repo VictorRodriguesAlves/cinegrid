@@ -8,6 +8,8 @@ Gerador de colagens de pôsteres dos filmes registrados no diário público do L
 
 Requisitos: Docker e Docker Compose disponíveis, Docker em execução, internet e um **API Read Access Token do desenvolvedor** no TMDB. Node.js e npm não são necessários no computador para este fluxo.
 
+Arquivos gerados e locais ficam fora do Git: `next-env.d.ts`, `.next/`, `node_modules/`, caches, logs, relatórios de testes e `.env.local`. O Next recria `next-env.d.ts` durante `dev`, `build` ou `typegen`; ele continua incluído no `tsconfig.json`. O `package-lock.json`, o `.env.example`, as configurações e as fixtures de testes são versionados para permitir reproduzir o projeto.
+
 Copie o arquivo de ambiente, na raiz do projeto:
 
 ```sh
