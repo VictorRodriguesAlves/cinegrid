@@ -127,7 +127,7 @@ export function CollageForm() {
             placeholder="usuário, URL do perfil ou boxd.it" value={username}
             aria-invalid={error?.field === "username"} aria-describedby={`username-help${error?.field === "username" ? " username-error" : ""}`}
             onChange={(event) => { invalidate(); setUsername(event.target.value); }} />
-          <p className="field-help" id="username-help">Só precisamos do seu nome de usuário. Sem senha.</p>
+          <p className="field-help" id="username-help">Só precisamos do seu nome de usuário.</p>
           {error?.field === "username" && <p className="field-error" id="username-error" role="alert">{error.message}</p>}
         </div>
         <fieldset><legend>Período</legend><div className="segmented period-options">
